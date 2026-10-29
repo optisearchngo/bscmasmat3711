@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.mathpix.com/fonts/cmu.css"/>
+    <style>html,body {
+  width: 100%;
+  height: 100%;
+}
+*, *::before,*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  color: #1E2029;
+  font-size: 14px;
+  line-height: normal;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 500;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+ol, ul, dl {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+ol ol, ul ul, ol ul, ul ol {
+  margin-bottom: 0;
+}
+dt {
+  font-weight: 500;
+}
+dd {
+  margin-bottom: 0.5em;
+  margin-left: 0;
+}
+blockquote {
+  margin: 0 0 1em;
+}
+dfn {
+  font-style: italic;
+}
+b, strong {
+  font-weight: bolder;
+}
+small {
+  font-size: 80%;
+}
+sub, sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+a {
+  color: #0B93ff;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #33aaff;
+}
+a:active {
+  color: #0070d9;
+}
+a:active, a:hover {
+  text-decoration: none;
+  outline: 0;
+}
+a[disabled] {
+  color: rgba(0, 0, 0, 0.25);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+pre, code, kbd, samp {
+  font-size: 1em;
+}
+pre {
+  margin-top: 0;
+  margin-bottom: 1em;
+  overflow: auto;
+}
+figure {
+  margin: 0 0 1em;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+table {
+  border-collapse: collapse;
+}
+caption {
+  padding-top: 0.75em;
+  padding-bottom: 0.3em;
+  color: rgba(0, 0, 0, 0.45);
+  text-align: left;
+  caption-side: bottom;
+}
+th {
+  text-align: inherit;
+}
+mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax="SVG"] > svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][display="true"][width="full"] {
+  display: flex;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line], svg[data-table] > g > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame], svg[data-table] > g > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed, svg[data-table] > g > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted, svg[data-table] > g > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > g > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
+  stroke-width: 3;
+}
+#setText > div {
+  justify-content: inherit;
+  margin-top: 0;
+  margin-bottom: 1em;
+  
+  
+}
+#setText div:last-child {
+  margin-bottom: 0 !important;
+}
+#setText > br, #preview-content br {
+  line-height: 1.2;
+}
+#preview-content > div {
+  margin-top: 0;
+  margin-bottom: 1em;
+  
+}
+.proof > div,
+#preview-content .proof > div, #setText .proof > div,
+.theorem > div,
+#preview-content .theorem > div, #setText .theorem > div {
+  margin-top: 1rem;
+}
+mjx-container {
+  text-indent: 0;
+  overflow-y: hidden;
+  overflow-x: auto;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  
+}
+.math-inline mjx-container {
+  display: inline-block !important;
+  page-break-inside: avoid;
+  max-width: 100%;
+  padding: 0;
+  line-height: 0;
+}
+.math-inline[data-overflow="visible"] mjx-container {
+  overflow: visible;
+}
+.math-inline mjx-container mjx-assistive-mml {
+  max-width: 100%;
+}
+.math-block {
+  align-items: center;
+  page-break-after: auto;
+  page-break-inside: avoid;
+  margin: 0;
+  display: block;
+}
+.math-inline {
+  display: inline-flex;
+  max-width: 100%;
+}
+.math-block[data-width="full"] {
+  overflow-x: auto;
+  display: flex;
+}
+.math-block[data-width="full"] mjx-container[jax=SVG][display=true] {
+  display: flex;
+  flex: 1 1;
+  justify-content: center;
+}
+svg .math-inline {
+  display: initial;
+  max-width: initial;
+}
+svg .math-inline mjx-container {
+  max-width: initial;
+}
+svg mjx-container {
+  overflow: visible;
+  padding: 0;
+}
+svg .math-block[data-width="full"] {
+  overflow: visible;
+}
+.math-block, .math-inline {
+  --mmd-highlight-color: rgba(0, 147, 255, 0.25);
+  --mmd-highlight-text-color: #1e2029;
+}
+.math-block[data-highlight-color] mjx-container[jax="SVG"] > svg {
+  background-color: var(--mmd-highlight-color);
+}
+.math-block[data-highlight-text-color] mjx-container[jax="SVG"] > svg {
+  color: var(--mmd-highlight-text-color);
+}
+.math-inline[data-highlight-color] mjx-container[jax="SVG"] {
+  background-color: var(--mmd-highlight-color);
+}
+.math-inline[data-highlight-text-color] mjx-container[jax="SVG"] {
+  color: var(--mmd-highlight-text-color);
+}
+.math-block p {
+  flex-shrink: 1;
+}
+.math-block mjx-container {
+  margin: 0 !important;
+}
+.math-error {
+  background-color: yellow;
+  color: red;
+}
+#preview-content img, #setText img {
+  max-width: 100%;
+}
+#preview-content blockquote, #setText blockquote {
+  page-break-inside: avoid;
+  color: #666;
+  margin: 0 0 1em 0;
+  padding-left: 3em;
+  border-left: .5em solid #eee;
+}
+#preview-content pre, #setText pre {
+  border: none;
+  padding: 0;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background: #f8f8fa;
+}
+#preview-content pre code, #setText pre code {
+  padding: 1rem;
+  display: block;
+  overflow-x: auto;
+  line-height: 24px;
+}
+#preview-content table, #setText table {
+  display: table;
+  overflow: auto;
+  max-width: 100%;
+  border-collapse: collapse;
+  page-break-inside: avoid;
+  margin-bottom: 1em;
+}
+#preview-content table th, #setText table th {
+  text-align: center;
+  font-weight: bold;
+}
+#preview-content table td, #setText table td,
+#preview-content table th, #setText table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+#preview-content table tr, #setText table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+#preview-content table tr:nth-child(2n), #setText table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+.main-title,
+#preview-content .main-title, #setText .main-title {
+  text-align: center;
+  line-height: 1.2;
+  margin: 0 auto 1em auto;
+}
+.author,
+#preview-content .author, #setText .author {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.author p,
+#preview-content .author p, #setText .author p {
+  min-width: 30%;
+  max-width: 50%;
+  padding: 0 7px;
+}
+.author > p > span,
+#preview-content .author > p > span, #setText .author > p > span {
+  display: block;
+  text-align: center;
+}
+.section-title,
+#preview-content .section-title, #setText .section-title {
+  margin-top: 1.5em;
+}
+.abstract,
+#preview-content .abstract, #setText .abstract {
+  text-align: justify;
+  margin-bottom: 1em;
+}
+.abstract p,
+#preview-content .abstract p, #setText .abstract p {
+  margin-bottom: 0;
+}
+#preview-content sup, #setText sup {
+  top: -.5em;
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+.text-url,
+#preview-content .text-url, #setText .text-url {
+  color: #0B93ff;
+  cursor: text;
+  pointer-events: none;
+}
+.text-url a:hover,
+#preview-content .text-url a:hover, #setText .text-url a:hover {
+  color: #0B93ff;
+}
+mark,
+#preview-content mark, #setText mark {
+  background-color: #feffe6;
+}
+span[data-underline-type] mark,
+#preview-content span[data-underline-type] mark,
+#setText span[data-underline-type] mark {
+  background: inherit;
+  background-color: #feffe6;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+*[data-has-dotfill] {
+  position: relative;
+  overflow: hidden;
+}
+*[data-has-dotfill] .dotfill::after {
+  position: absolute;
+  padding-left: .25ch;
+  content: " . . . . . . . . . . . . . . . . . . . "
+      ". . . . . . . . . . . . . . . . . . . . . . . "
+      ". . . . . . . . . . . . . . . . . . . . . . . "
+      ". . . . . . . . . . . . . . . . . . . . . . . "
+      ". . . . . . . . . . . . . . . . . . . . . . . "
+      ". . . . . . . . . . . . . . . . . . . . . . . "
+      ". . . . . . . . . . . . . . . . . . . . . . . ";
+  text-align: right;
+}
+.smiles,
+#preview-content .smiles, #setText .smiles {
+  text-align: center;
+}
+div.svg-container,
+#preview-content > div.svg-container,
+#setText > div.svg-container {
+  display: flex;
+  justify-content: center;
+}
+@media print {
+  #preview {
+    font-size: 10pt !important;
+  }
+  .math-block svg, .math-inline svg {
+    shape-rendering: crispEdges;
+    margin-top: 1px;
+  }
+  #preview-content img, #setText img {
+    display: block;
+  }
+  #preview-content .figure_img img, #setText .figure_img img {
+    display: inline;
+  }
+  #preview-content h1, #preview-content h2, #preview-content h3,
+  #preview-content h4, #preview-content h5, #preview-content h6,
+  #setText h1, #setText h2, #setText h3,
+  #setText h4, #setText h5, #setText h6 {
+    page-break-inside: avoid;
+    position: relative;
+    border: 2px solid transparent;
+  }
+  #preview-content h1::after, #preview-content h2::after, #preview-content h3::after,
+  #preview-content h4::after, #preview-content h5::after, #preview-content h6::after,
+  #setText h1::after, #setText h2::after, #setText h3::after,
+  #setText h4::after, #setText h5::after, #setText h6::after {
+    content: "";
+    display: block;
+    height: 100px;
+    margin-bottom: -100px;
+    position: relative;
+  }
+}
+#preview-content code, #setText code {
+  font-family: Inconsolata;
+  font-size: inherit;
+  display: initial;
+  background: #f8f8fa;
+}
+#preview-content .mmd-highlight code, #setText .mmd-highlight code,
+#preview-content pre.mmd-highlight code, #setText pre.mmd-highlight code {
+  background-color: transparent;
+}
+#preview-content pre code, #setText pre code {
+  font-family: 'DM Mono', Inconsolata, monospace;
+  color: #333;
+  font-size: 15px;
+}
+.hljs-comment, .hljs-quote,
+#preview-content .hljs-comment, #setText .hljs-comment,
+#preview-content .hljs-quote, #setText .hljs-quote {
+  color: #998;
+  font-style: italic;
+}
+.hljs-command,
+#preview-content .hljs-command, #setText .hljs-command {
+  color: #005cc5;
+}
+.hljs-keyword, .hljs-selector-tag, .hljs-subst,
+#preview-content .hljs-keyword, #setText .hljs-keyword,
+#preview-content .hljs-selector-tag, #setText .hljs-selector-tag,
+#preview-content .hljs-subst, #setText .hljs-subst {
+  color: #d73a49;
+  font-weight: bold;
+}
+.hljs-number, .hljs-literal, .hljs-variable,
+.hljs-template-variable, .hljs-tag .hljs-attr,
+#preview-content .hljs-number, #setText .hljs-number,
+#preview-content .hljs-literal, #setText .hljs-literal,
+#preview-content .hljs-variable, #setText .hljs-variable,
+#preview-content .hljs-template-variable, #setText .hljs-template-variable,
+#preview-content .hljs-tag .hljs-attr, #setText .hljs-tag .hljs-attr {
+  color: #005cc5;
+}
+.hljs-string, .hljs-doctag,
+#preview-content .hljs-string, #setText .hljs-string,
+#preview-content .hljs-doctag, #setText .hljs-doctag {
+  color: #24292e;
+}
+.hljs-title, .hljs-section, .hljs-selector-id,
+#preview-content .hljs-title, #setText .hljs-title,
+#preview-content .hljs-section, #setText .hljs-section,
+#preview-content .hljs-selector-id, #setText .hljs-selector-id {
+  color: #6f42c1;
+  font-weight: bold;
+}
+.hljs-subst,
+#preview-content .hljs-subst, #setText .hljs-subst {
+  font-weight: normal;
+}
+.hljs-type, .hljs-class .hljs-title,
+#preview-content .hljs-type, #setText .hljs-type,
+#preview-content .hljs-class .hljs-title, #setText .hljs-class .hljs-title {
+  color: #458;
+  font-weight: bold;
+}
+.hljs-tag, .hljs-name, .hljs-attribute,
+#preview-content .hljs-tag, #setText .hljs-tag,
+#preview-content .hljs-name, #setText .hljs-name,
+#preview-content .hljs-attribute, #setText .hljs-attribute {
+  color: #000080;
+  font-weight: normal;
+}
+.hljs-regexp, .hljs-link,
+#preview-content .hljs-regexp, #setText .hljs-regexp,
+#preview-content .hljs-link, #setText .hljs-link {
+  color: #009926;
+}
+.hljs-symbol, .hljs-bullet,
+#preview-content .hljs-symbol, #setText .hljs-symbol,
+#preview-content .hljs-bullet, #setText .hljs-bullet {
+  color: #990073;
+}
+.hljs-built_in, .hljs-builtin-name,
+#preview-content .hljs-built_in, #setText .hljs-built_in,
+#preview-content .hljs-builtin-name, #setText .hljs-builtin-name {
+  color: #24292e;
+}
+.hljs-meta,
+#preview-content .hljs-meta, #setText .hljs-meta {
+  color: #999;
+  font-weight: bold;
+}
+.hljs-meta-keyword,
+#preview-content .hljs-meta-keyword, #setText .hljs-meta-keyword {
+  color: #d73a49;
+}
+.hljs-meta-string,
+#preview-content .hljs-meta-string, #setText .hljs-meta-string {
+  color: #032f62;
+}
+.hljs-deletion,
+#preview-content .hljs-deletion, #setText .hljs-deletion {
+  background: #fdd;
+}
+.hljs-addition,
+#preview-content .hljs-addition, #setText .hljs-addition {
+  background: #dfd;
+}
+.hljs-emphasis,
+#preview-content .hljs-emphasis, #setText .hljs-emphasis {
+  font-style: italic;
+}
+.hljs-strong,
+#preview-content .hljs-strong, #setText .hljs-strong {
+  font-weight: bold;
+}
+.table_tabular,
+#preview-content .table_tabular, #setText .table_tabular {
+  overflow-x: auto;
+  padding: 0 2px 0.5em 2px;
+}
+.tabular,
+#preview-content .tabular, #setText .tabular {
+  display: inline-table !important;
+  width: auto;
+  table-layout: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 0 1em;
+  font-size: inherit;
+  height: fit-content;
+}
+.tabular th,
+#preview-content .tabular th, #setText .tabular th {
+  border: none !important;
+  padding: 6px 13px;
+  background-color: transparent;
+  font-weight: bold;
+}
+.tabular tr,
+#preview-content .tabular tr, #setText .tabular tr {
+  border-top: none !important;
+  border-bottom: none !important;
+  background-color: transparent;
+}
+.tabular td,
+#preview-content .tabular td, #setText .tabular td {
+  border-style: none !important;
+  background-color: #fff;
+  border-color: #000 !important;
+  word-break: keep-all;
+  padding: 0.1em 0.5em !important;
+}
+.tabular td > p,
+#preview-content .tabular td > p, #setText .tabular td > p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.tabular td._empty,
+#preview-content .tabular td._empty, #setText .tabular td._empty {
+  height: 1.3em;
+}
+.tabular td .f,
+#preview-content .tabular td .f, #setText .tabular td .f {
+  opacity: 0;
+}
+#preview-content .sub-table table, #setText .sub-table table {
+  margin-bottom: 0;
+}
+html[data-theme="dark"] .tabular tr,
+html[data-theme="dark"] #preview-content .tabular tr, html[data-theme="dark"] #setText .tabular tr,
+html[data-theme="dark"] .tabular td,
+html[data-theme="dark"] #preview-content .tabular td, html[data-theme="dark"] #setText .tabular td {
+  background-color: #202226;
+  border-color: #fff !important;
+}
+.figure_img,
+#preview-content .figure_img, #setText .figure_img {
+  margin-bottom: 0.5em;
+  overflow-x: auto;
+}
+div.figure_img img,
+#preview-content div.figure_img img, #setText div.figure_img img {
+  display: inline;
+  margin: 0;
+}
+ol.enumerate, ul.itemize,
+#preview-content ol.enumerate, #setText ol.enumerate,
+#preview-content ul.itemize, #setText ul.itemize {
+  padding-inline-start: 40px;
+  margin: 0 0 1em 0;
+}
+li > ol.enumerate, li > ul.itemize,
+#preview-content li > ol.enumerate, #setText li > ol.enumerate,
+#preview-content li > ul.itemize, #setText li > ul.itemize {
+  margin: 0;
+}
+ul.itemize > li,
+#preview-content ul.itemize > li, #setText ul.itemize > li {
+  position: relative;
+  min-height: 1.4em;
+  margin-bottom: 0;
+}
+.enumerate > .li_enumerate,
+#preview-content .enumerate > .li_enumerate, #setText .enumerate > .li_enumerate {
+  margin-bottom: 0;
+}
+.itemize > li > span.li_level, .li_enumerate.not_number > span.li_level,
+#preview-content .itemize > li > span.li_level, #setText .itemize > li > span.li_level,
+#preview-content .li_enumerate.not_number > span.li_level, #setText .li_enumerate.not_number > span.li_level {
+  position: absolute;
+  right: 100%;
+  white-space: nowrap;
+  width: max-content;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+.li_enumerate.not_number,
+#preview-content .li_enumerate.not_number, #setText .li_enumerate.not_number {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  min-height: 1.4em;
+}
+.itemize > li > span.li_level .math-inline,
+.enumerate > li > span.li_level .math-inline,
+#preview-content .itemize > li > span.li_level .math-inline,
+#setText .itemize > li > span.li_level .math-inline,
+#preview-content .enumerate > li > span.li_level .math-inline,
+#setText .enumerate > li > span.li_level .math-inline {
+  display: inline-block;
+}
+#preview {
+  font-family: 'CMU Serif', 'Georgia', Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  visibility: visible;
+  word-break: break-word;
+  padding: 2.5em;
+  max-width: 800px;
+  margin: auto;
+  box-sizing: content-box;
+}
+#preview h1, #preview h2, #preview h3, #preview h4, #preview h5, #preview strong {
+  font-family: 'CMU Serif Bold', 'Georgia', Helvetica, Arial, sans-serif;
+}
+#preview i, #preview em {
+  font-family: 'CMU Serif Italic', 'Georgia', Helvetica, Arial, sans-serif;
+}
+.mmd-menu {
+  max-width: 320px;
+  position: absolute;
+  background-color: white;
+  color: black;
+  width: auto;
+  padding: 5px 0;
+  border: 1px solid #E5E6EB;
+  margin: 0;
+  cursor: default;
+  font: menu;
+  text-align: left;
+  text-indent: 0;
+  text-transform: none;
+  line-height: normal;
+  letter-spacing: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  float: none;
+  z-index: 201;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  box-shadow: 0 10px 20px #808080;
+  -webkit-box-shadow: 0 10px 20px #808080;
+  -moz-box-shadow: 0 10px 20px #808080;
+  -khtml-box-shadow: 0 10px 20px #808080;
+}
+.mmd-menu:focus { outline: none; }
+.mmd-menu.mmd-menu-sm {
+  max-width: 100vw;
+  padding-bottom: 34px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -khtml-border-radius: 0;
+}
+.mmd-menu-item-icon {
+  color: #1E2029;
+  margin-left: auto;
+  align-items: center;
+  display: none;
+  flex-shrink: 0;
+}
+.mmd-menu-item {
+  padding: 8px 1.25rem;
+  display: flex;
+  background: transparent;
+  height: 52px;
+  max-height: 52px;
+}
+.mmd-menu-item:focus { outline: none; }
+.mmd-menu-item.active {
+  background-color: #e1e0e5;
+}
+.mmd-menu-item.active .mmd-menu-item-icon {
+  display: flex;
+}
+.mmd-menu-item-container {
+  overflow: hidden;
+}
+.mmd-menu-item-title {
+  color: #1E2029;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 20px;
+}
+.mmd-menu-item-value {
+  color: #7d829c;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 16px;
+}
+html[data-theme="dark"] .mmd-menu-item-title {
+  color: #ebefe7;
+}
+html[data-theme="dark"] .mmd-menu-item.active .mmd-menu-item-title {
+  color: #1E2029;
+}
+html[data-theme="dark"] .mmd-menu {
+  background-color: #33363a;
+}
+.mmd-context-menu-overlay {
+  background: rgba(0, 0, 0, 0.56);
+}
+.ClipboardButton {
+  padding: 0;
+  margin: 0.5rem;
+  display: inline-block;
+  cursor: pointer;
+  color: rgb(36, 41, 47);
+  background: rgb(246, 248, 250);
+  border-radius: 6px;
+  border: 1px solid rgba(31, 35, 40, 0.15);
+  box-shadow: rgba(31, 35, 40, 0.04) 0 1px 0 0, rgba(255, 255, 255, 0.25) 0 1px 0 0 inset;
+  position: relative;
+}
+.ClipboardButton:hover {
+  background-color: rgb(243, 244, 246);
+  border-color: rgba(31, 35, 40, 0.15);
+  transition-duration: .1s;
+}
+td .mmd-clipboard-copy-container {
+  line-height: 0;
+}
+td .ClipboardButton {
+  margin: 1px;
+  line-height: 0;
+}
+td .ClipboardButton .mmd-clipboard-icon {
+  margin: 1px !important;
+  transform: scale(0.6);
+}
+.mmd-clipboard-icon {
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+.mmd-clipboard-copy-icon {
+  color: rgb(101, 109, 118);
+}
+.mmd-clipboard-check-icon {
+  color: rgb(26, 127, 55);
+}
+.mmd-tooltipped-no-delay:hover::before,
+.mmd-tooltipped-no-delay:hover::after {
+  animation-delay: 0s;
+}
+.mmd-tooltipped:hover::before,
+.mmd-tooltipped:hover::after {
+  display: inline-block;
+  text-decoration: none;
+  animation-name: tooltip-appear;
+  animation-duration: .1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-delay: .4s;
+}
+.mmd-tooltipped-w::before {
+  top: 50%;
+  bottom: 50%;
+  left: -7px;
+  margin-top: -6px;
+  border-left-color: rgb(36, 41, 47);
+}
+.mmd-tooltipped::before {
+  position: absolute;
+  z-index: 1000001;
+  display: none;
+  width: 0;
+  height: 0;
+  color: rgb(36, 41, 47);
+  pointer-events: none;
+  content: "";
+  border: 6px solid transparent;
+  opacity: 0;
+}
+.mmd-tooltipped-w::after {
+  right: 100%;
+  bottom: 50%;
+  margin-right: 6px;
+  transform: translateY(50%);
+}
+.mmd-tooltipped::after {
+  position: absolute;
+  z-index: 1000000;
+  display: none;
+  padding: 0.5em 0.75em;
+  font: normal normal 11px/1.5 'CMU Serif', 'Georgia', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: break-word;
+  white-space: pre;
+  pointer-events: none;
+  content: attr(aria-label);
+  background: rgb(36, 41, 47);
+  border-radius: 6px;
+  opacity: 0;
+}</style>
+</head>
+<body>
+  <div id="preview" class="preview scrollEditor">
+    <div id="container-ruller" />
+    <div id="preview-content">
+      <h1 type="title" class="main-title" id="index">
+index</h1>
+<h1 id="solutions%3A-questions-1%E2%80%934" class="preview-paragraph-0 preview-line 0" data_line_start="0" data_line_end="0" data_line="0,1" count_line="1">Solutions: Questions 1–4</h1>
+<div class="preview-paragraph-2 preview-line 2" data_line_start="2" data_line_end="2" data_line="2,3" count_line="1">MAT3711 · metric spaces, uniform convergence and integration (UNISA 2026 paper)</div>
+<hr>
+<h2 id="question-1" class="preview-paragraph-6 preview-line 6" data_line_start="6" data_line_end="6" data_line="6,7" count_line="1">Question 1</h2>
+<div class="preview-paragraph-8 preview-line 8" data_line_start="8" data_line_end="8" data_line="8,9" count_line="1">Assume <span class="math-inline ">$B\neq\emptyset$</span> (otherwise <span class="math-inline ">$d(\cdot,B)=+\infty$</span>). Note that <span class="math-inline ">$d(A,B)=\inf_{a\in A}d(\{a\},B)$</span>.</div>
+<h3 id="(a)" class="preview-paragraph-10 preview-line 10" data_line_start="10" data_line_end="10" data_line="10,11" count_line="1">(a)</h3>
+<div class="preview-paragraph-12 preview-line 12" data_line_start="12" data_line_end="12" data_line="12,13" count_line="1">Let <span class="math-inline ">$x,y\in X$</span> and <span class="math-inline ">$b\in B$</span>. By the triangle inequality <span class="math-inline ">$d(x,b)\le d(x,y)+d(y,b)$</span>. Taking the infimum over <span class="math-inline ">$b\in B$</span> gives <span class="math-inline ">$g(x)\le d(x,y)+g(y)$</span>. Swapping <span class="math-inline ">$x$</span> and <span class="math-inline ">$y$</span> gives <span class="math-inline ">$g(y)\le d(x,y)+g(x)$</span>. Hence</div>
+<div class="preview-paragraph-14 preview-line 14" data_line_start="14" data_line_end="14" data_line="14,15" count_line="1"><span class="math-block ">$$|g(x)-g(y)|\le d(x,y)\quad\forall x,y\in X,$$</span></div>
+<div class="preview-paragraph-16 preview-line 16" data_line_start="16" data_line_end="16" data_line="16,17" count_line="1">so <span class="math-inline ">$g$</span> is Lipschitz with <span class="math-inline ">$k=1$</span>.</div>
+<div class="preview-paragraph-18 preview-line 18" data_line_start="18" data_line_end="18" data_line="18,19" count_line="1"><em>Note:</em> the strict &quot;<span class="math-inline ">$\lt$</span>&quot; in the quoted definition cannot hold for <span class="math-inline ">$k=1$</span> in general: in <span class="math-inline ">$\mathbb R$</span> with <span class="math-inline ">$B=\{0\}$</span>, <span class="math-inline ">$|g(x)-g(y)|=|x-y|$</span> for <span class="math-inline ">$x,y\gt0$</span>. The standard definition uses &quot;<span class="math-inline ">$\le$</span>&quot;, which is what is proved here.</div>
+<h3 id="(b)" class="preview-paragraph-20 preview-line 20" data_line_start="20" data_line_end="20" data_line="20,21" count_line="1">(b)</h3>
+<div class="preview-paragraph-22 preview-line 22" data_line_start="22" data_line_end="22" data_line="22,23" count_line="1">Let <span class="math-inline ">$A$</span> be compact and nonempty, <span class="math-inline ">$B$</span> closed, and <span class="math-inline ">$A\cap B=\emptyset$</span>.</div>
+<ul class="preview-paragraph-24 preview-line 24 25 26 27" data_line_start="24" data_line_end="27" data_line="24,28" count_line="4">
+<li>By (a), <span class="math-inline ">$g$</span> is continuous, so on the compact set <span class="math-inline ">$A$</span> it attains its minimum at some <span class="math-inline ">$a_0\in A$</span>. Then <span class="math-inline ">$d(A,B)=\inf_{a\in A}g(a)=g(a_0)$</span>.</li>
+<li>Suppose <span class="math-inline ">$g(a_0)=0$</span>. For each <span class="math-inline ">$n$</span> there is <span class="math-inline ">$b_n\in B$</span> with <span class="math-inline ">$d(a_0,b_n)\lt 1/n$</span>, so <span class="math-inline ">$b_n\to a_0$</span>. As <span class="math-inline ">$B$</span> is closed, <span class="math-inline ">$a_0\in B$</span>, contradicting <span class="math-inline ">$A\cap B=\emptyset$</span>.</li>
+<li>Hence <span class="math-inline ">$d(A,B)=g(a_0)\gt0$</span>. <span class="math-inline ">$\blacksquare$</span></li>
+</ul>
+<div class="preview-paragraph-28 preview-line 28" data_line_start="28" data_line_end="28" data_line="28,29" count_line="1"><strong>Counterexample (both closed, neither compact).</strong> In <span class="math-inline ">$\mathbb R^2$</span> take</div>
+<div class="preview-paragraph-30 preview-line 30" data_line_start="30" data_line_end="30" data_line="30,31" count_line="1"><span class="math-block ">$$A=\{(x,0):x\in\mathbb R\},\qquad B=\{(x,1/x):x\gt0\}.$$</span></div>
+<div class="preview-paragraph-32 preview-line 32" data_line_start="32" data_line_end="32" data_line="32,33" count_line="1">Both are closed and <span class="math-inline ">$A\cap B=\emptyset$</span>, but <span class="math-inline ">$d\big((x,0),(x,1/x)\big)=1/x\to 0$</span>, so <span class="math-inline ">$d(A,B)=0$</span>.</div>
+<div class="preview-paragraph-34 preview-line 34" data_line_start="34" data_line_end="34" data_line="34,35" count_line="1"><strong>If <span class="math-inline ">$A\cap B\neq\emptyset$</span>.</strong> Pick <span class="math-inline ">$x\in A\cap B$</span>; then <span class="math-inline ">$d(x,x)=0$</span>, so <span class="math-inline ">$d(A,B)=0$</span> always. Thus for compact <span class="math-inline ">$A$</span> and closed <span class="math-inline ">$B$</span>: <span class="math-inline ">$d(A,B)\gt0\iff A\cap B=\emptyset$</span>.</div>
+<h3 id="(c)" class="preview-paragraph-36 preview-line 36" data_line_start="36" data_line_end="36" data_line="36,37" count_line="1">(c)</h3>
+<div class="preview-paragraph-38 preview-line 38" data_line_start="38" data_line_end="38" data_line="38,39" count_line="1">Let <span class="math-inline ">$p\neq q$</span> in <span class="math-inline ">$X$</span> and <span class="math-inline ">$r:=d(p,q)\gt0$</span>. Define <span class="math-inline ">$f:X\to\mathbb R$</span>, <span class="math-inline ">$f(x)=d(x,p)$</span>. By (a) with <span class="math-inline ">$B=\{p\}$</span>, <span class="math-inline ">$f$</span> is continuous.</div>
+<div class="preview-paragraph-40 preview-line 40" data_line_start="40" data_line_end="40" data_line="40,41" count_line="1"><span class="math-inline ">$X$</span> is connected, so by the Intermediate Value Theorem <span class="math-inline ">$f[X]$</span> is an interval. It contains <span class="math-inline ">$f(p)=0$</span> and <span class="math-inline ">$f(q)=r$</span>, hence <span class="math-inline ">$[0,r]\subseteq f[X]$</span>.</div>
+<div class="preview-paragraph-42 preview-line 42" data_line_start="42" data_line_end="42" data_line="42,43" count_line="1">For each <span class="math-inline ">$t\in[0,r]$</span> choose <span class="math-inline ">$x_t\in X$</span> with <span class="math-inline ">$f(x_t)=t$</span>. The map <span class="math-inline ">$t\mapsto x_t$</span> is injective because <span class="math-inline ">$f(x_t)=t$</span> differs for different <span class="math-inline ">$t$</span>. So <span class="math-inline ">$X$</span> contains an uncountable subset, and <span class="math-inline ">$X$</span> is uncountable. <span class="math-inline ">$\blacksquare$</span></div>
+<hr>
+<h2 id="question-2" class="preview-paragraph-46 preview-line 46" data_line_start="46" data_line_end="46" data_line="46,47" count_line="1">Question 2</h2>
+<h3 id="(a)(i)-pointwise-limit" class="preview-paragraph-48 preview-line 48" data_line_start="48" data_line_end="48" data_line="48,49" count_line="1">(a)(i) Pointwise limit</h3>
+<div class="preview-paragraph-50 preview-line 50" data_line_start="50" data_line_end="50" data_line="50,51" count_line="1"><span class="math-inline ">$f_n(0)=0$</span> for all <span class="math-inline ">$n$</span>, so <span class="math-inline ">$f(0)=0$</span>. For <span class="math-inline ">$x\in(0,1]$</span>,</div>
+<div class="preview-paragraph-52 preview-line 52" data_line_start="52" data_line_end="52" data_line="52,53" count_line="1"><span class="math-block ">$$0\le f_n(x)=\frac{nx}{1+n^2x^2}\le\frac{nx}{n^2x^2}=\frac1{nx}\to0.$$</span></div>
+<div class="preview-paragraph-54 preview-line 54" data_line_start="54" data_line_end="54" data_line="54,55" count_line="1"><strong>Answer:</strong> <span class="math-inline ">$f\equiv 0$</span> on <span class="math-inline ">$[0,1]$</span>.</div>
+<h3 id="(a)(ii)-uniform-convergence%3F" class="preview-paragraph-56 preview-line 56" data_line_start="56" data_line_end="56" data_line="56,57" count_line="1">(a)(ii) Uniform convergence?</h3>
+<div class="preview-paragraph-58 preview-line 58" data_line_start="58" data_line_end="58" data_line="58,59" count_line="1">No. At <span class="math-inline ">$x=1/n\in[0,1]$</span>, <span class="math-inline ">$f_n(1/n)=\dfrac{1}{1+1}=\tfrac12$</span>. So <span class="math-inline ">$\sup_{[0,1]}|f_n-f|\ge\tfrac12\not\to0$</span>. The convergence is not uniform, even though the limit function is continuous.</div>
+<h3 id="(b)(i)" class="preview-paragraph-60 preview-line 60" data_line_start="60" data_line_end="60" data_line="60,61" count_line="1">(b)(i)</h3>
+<div class="preview-paragraph-62 preview-line 62" data_line_start="62" data_line_end="62" data_line="62,63" count_line="1">For <span class="math-inline ">$a,c\ge0$</span>, <span class="math-inline ">$ac\le\frac12(a^2+c^2)$</span>. With <span class="math-inline ">$a=\sqrt{a_n}$</span> and <span class="math-inline ">$c=1/n$</span>,</div>
+<div class="preview-paragraph-64 preview-line 64" data_line_start="64" data_line_end="64" data_line="64,65" count_line="1"><span class="math-block ">$$0\lt\frac{\sqrt{a_n}}{n}\le\frac12\Big(a_n+\frac1{n^2}\Big).$$</span></div>
+<div class="preview-paragraph-66 preview-line 66" data_line_start="66" data_line_end="66" data_line="66,67" count_line="1">Both <span class="math-inline ">$\sum a_n$</span> and <span class="math-inline ">$\sum 1/n^2$</span> converge, so by the comparison test <span class="math-inline ">$\sum\sqrt{a_n}/n$</span> converges. Its terms are positive, so it converges absolutely. <span class="math-inline ">$\blacksquare$</span></div>
+<h3 id="(b)(ii)" class="preview-paragraph-68 preview-line 68" data_line_start="68" data_line_end="68" data_line="68,69" count_line="1">(b)(ii)</h3>
+<div class="preview-paragraph-70 preview-line 70" data_line_start="70" data_line_end="70" data_line="70,71" count_line="1">The converse is false. Take <span class="math-inline ">$a_n=1/n$</span>. Then <span class="math-inline ">$\sum a_n$</span> is the harmonic series, which diverges. But</div>
+<div class="preview-paragraph-72 preview-line 72" data_line_start="72" data_line_end="72" data_line="72,73" count_line="1"><span class="math-block ">$$\sum\frac{\sqrt{a_n}}{n}=\sum\frac1{n^{3/2}}$$</span></div>
+<div class="preview-paragraph-74 preview-line 74" data_line_start="74" data_line_end="74" data_line="74,75" count_line="1">converges (p-series with <span class="math-inline ">$p=3/2\gt1$</span>).</div>
+<h3 id="(c)-2" class="preview-paragraph-76 preview-line 76" data_line_start="76" data_line_end="76" data_line="76,77" count_line="1">(c)</h3>
+<div class="preview-paragraph-78 preview-line 78" data_line_start="78" data_line_end="78" data_line="78,79" count_line="1">Let <span class="math-inline ">$\varepsilon\gt0$</span> and <span class="math-inline ">$L=\lim_{x\to\infty}f(x)$</span>.</div>
+<ol class="preview-paragraph-80 preview-line 80 81 82 83 84 85" data_line_start="80" data_line_end="85" data_line="80,86" count_line="6">
+<li>Choose <span class="math-inline ">$M\gt0$</span> with <span class="math-inline ">$|f(x)-L|\lt\varepsilon/2$</span> for all <span class="math-inline ">$x\ge M$</span>. Then <span class="math-inline ">$|f(x)-f(y)|\lt\varepsilon$</span> for all <span class="math-inline ">$x,y\ge M$</span>.</li>
+<li><span class="math-inline ">$[0,M+1]$</span> is compact and <span class="math-inline ">$f$</span> is continuous, so <span class="math-inline ">$f$</span> is uniformly continuous on it. There is <span class="math-inline ">$\delta_1\gt0$</span> with <span class="math-inline ">$|f(x)-f(y)|\lt\varepsilon$</span> whenever <span class="math-inline ">$x,y\in[0,M+1]$</span> and <span class="math-inline ">$|x-y|\lt\delta_1$</span>.</li>
+<li>Put <span class="math-inline ">$\delta=\min(\delta_1,1)$</span> and let <span class="math-inline ">$x\lt y$</span> with <span class="math-inline ">$y-x\lt\delta$</span>.
+<ul>
+<li>If <span class="math-inline ">$y\le M+1$</span>, both points lie in <span class="math-inline ">$[0,M+1]$</span>, so step 2 applies.</li>
+<li>If <span class="math-inline ">$y\gt M+1$</span>, then <span class="math-inline ">$x\gt y-1\gt M$</span>, so both points are <span class="math-inline ">$\ge M$</span> and step 1 applies.</li>
+</ul>
+</li>
+</ol>
+<div class="preview-paragraph-86 preview-line 86" data_line_start="86" data_line_end="86" data_line="86,87" count_line="1">In either case <span class="math-inline ">$|f(x)-f(y)|\lt\varepsilon$</span>, so <span class="math-inline ">$f$</span> is uniformly continuous on <span class="math-inline ">$\mathbb R_{\ge0}$</span>. <span class="math-inline ">$\blacksquare$</span></div>
+<hr>
+<h2 id="question-3" class="preview-paragraph-90 preview-line 90" data_line_start="90" data_line_end="90" data_line="90,91" count_line="1">Question 3</h2>
+<h3 id="(a)-2" class="preview-paragraph-92 preview-line 92" data_line_start="92" data_line_end="92" data_line="92,93" count_line="1">(a)</h3>
+<div class="preview-paragraph-94 preview-line 94" data_line_start="94" data_line_end="94" data_line="94,95" count_line="1">Let <span class="math-inline ">$h_n:=|f-f_n|$</span>. Each <span class="math-inline ">$h_n$</span> is continuous and <span class="math-inline ">$h_n(x)\to0$</span> pointwise. Because <span class="math-inline ">$(f_n)$</span> is monotone and converges to <span class="math-inline ">$f$</span>, for each <span class="math-inline ">$x$</span> either <span class="math-inline ">$f_n(x)\uparrow f(x)$</span> (so <span class="math-inline ">$h_n=f-f_n\ge0$</span>) or <span class="math-inline ">$f_n(x)\downarrow f(x)$</span> (so <span class="math-inline ">$h_n=f_n-f\ge0$</span>). In both cases <span class="math-inline ">$h_{n+1}\le h_n$</span>.</div>
+<div class="preview-paragraph-96 preview-line 96" data_line_start="96" data_line_end="96" data_line="96,97" count_line="1">Fix <span class="math-inline ">$\varepsilon\gt0$</span> and set <span class="math-inline ">$U_n:=\{x\in X:h_n(x)\lt\varepsilon\}$</span>.</div>
+<ul class="preview-paragraph-98 preview-line 98 99 100 101" data_line_start="98" data_line_end="101" data_line="98,102" count_line="4">
+<li><span class="math-inline ">$U_n$</span> is open, as the preimage of <span class="math-inline ">$(-\infty,\varepsilon)$</span> under a continuous map.</li>
+<li><span class="math-inline ">$U_n\subseteq U_{n+1}$</span>, because <span class="math-inline ">$h_n$</span> is non-increasing in <span class="math-inline ">$n$</span>.</li>
+<li><span class="math-inline ">$\bigcup_nU_n=X$</span>, because <span class="math-inline ">$h_n(x)\to0$</span> for every <span class="math-inline ">$x$</span>.</li>
+</ul>
+<div class="preview-paragraph-102 preview-line 102" data_line_start="102" data_line_end="102" data_line="102,103" count_line="1">By compactness, finitely many <span class="math-inline ">$U_{n_1},\dots,U_{n_k}$</span> cover <span class="math-inline ">$X$</span>. With <span class="math-inline ">$N=\max n_i$</span> we get <span class="math-inline ">$U_N=X$</span>. For <span class="math-inline ">$n\ge N$</span>, <span class="math-inline ">$X=U_N\subseteq U_n$</span>, i.e. <span class="math-inline ">$|f_n(x)-f(x)|\lt\varepsilon$</span> for all <span class="math-inline ">$x\in X$</span>. Hence <span class="math-inline ">$f_n\to f$</span> uniformly. <span class="math-inline ">$\blacksquare$</span></div>
+<h3 id="(b)-both-hypotheses-are-needed" class="preview-paragraph-104 preview-line 104" data_line_start="104" data_line_end="104" data_line="104,105" count_line="1">(b) Both hypotheses are needed</h3>
+<div class="preview-paragraph-106 preview-line 106" data_line_start="106" data_line_end="106" data_line="106,107" count_line="1"><strong>Continuity of <span class="math-inline ">$f$</span> is needed.</strong> On <span class="math-inline ">$X=[0,1]$</span> let <span class="math-inline ">$f_n(x)=x^n$</span>. These are continuous and decreasing in <span class="math-inline ">$n$</span>, with limit <span class="math-inline ">$f=0$</span> on <span class="math-inline ">$[0,1)$</span> and <span class="math-inline ">$f(1)=1$</span>. The sequence is monotone but <span class="math-inline ">$f$</span> is discontinuous, and the convergence is not uniform (a uniform limit of continuous functions is continuous).</div>
+<div class="preview-paragraph-108 preview-line 108" data_line_start="108" data_line_end="108" data_line="108,109" count_line="1"><strong>Monotonicity is needed.</strong> On <span class="math-inline ">$[0,1]$</span> let <span class="math-inline ">$f_n(x)=\dfrac{nx}{1+n^2x^2}$</span> (Question 2(a)). These are continuous and the limit <span class="math-inline ">$0$</span> is continuous, but the convergence is not uniform since <span class="math-inline ">$\sup|f_n|\ge\frac12$</span>. The sequence is not monotone: at <span class="math-inline ">$x=\frac12$</span> the values for <span class="math-inline ">$n=1,2,3$</span> are <span class="math-inline ">$0.4,\ 0.5,\ 0.46\ldots$</span></div>
+<hr>
+<h2 id="question-4" class="preview-paragraph-112 preview-line 112" data_line_start="112" data_line_end="112" data_line="112,113" count_line="1">Question 4</h2>
+<h3 id="(a)-3" class="preview-paragraph-114 preview-line 114" data_line_start="114" data_line_end="114" data_line="114,115" count_line="1">(a)</h3>
+<div class="preview-paragraph-116 preview-line 116" data_line_start="116" data_line_end="116" data_line="116,117" count_line="1">Take <span class="math-inline ">$g(x)=x(1-x)f(x)$</span>. It is continuous with <span class="math-inline ">$g(0)=g(1)=0$</span>, so</div>
+<div class="preview-paragraph-118 preview-line 118" data_line_start="118" data_line_end="118" data_line="118,119" count_line="1"><span class="math-block ">$$0=\int_0^1 fg\,dx=\int_0^1x(1-x)f(x)^2\,dx.$$</span></div>
+<div class="preview-paragraph-120 preview-line 120" data_line_start="120" data_line_end="120" data_line="120,121" count_line="1">The integrand <span class="math-inline ">$h(x)=x(1-x)f(x)^2$</span> is continuous and <span class="math-inline ">$\ge0$</span>. If <span class="math-inline ">$h(x_0)\gt0$</span> for some <span class="math-inline ">$x_0$</span>, then <span class="math-inline ">$h\gt h(x_0)/2$</span> on some interval <span class="math-inline ">$[c,d]$</span> with <span class="math-inline ">$c\lt d$</span>, giving <span class="math-inline ">$\int_0^1h\ge(d-c)h(x_0)/2\gt0$</span>, a contradiction.</div>
+<div class="preview-paragraph-122 preview-line 122" data_line_start="122" data_line_end="122" data_line="122,123" count_line="1">So <span class="math-inline ">$x(1-x)f(x)^2=0$</span> everywhere, hence <span class="math-inline ">$f=0$</span> on <span class="math-inline ">$(0,1)$</span>, and by continuity <span class="math-inline ">$f(0)=f(1)=0$</span>. Therefore <span class="math-inline ">$f=\mathbf 0$</span>. <span class="math-inline ">$\blacksquare$</span></div>
+<h3 id="(b)-2" class="preview-paragraph-124 preview-line 124" data_line_start="124" data_line_end="124" data_line="124,125" count_line="1">(b)</h3>
+<div class="preview-paragraph-126 preview-line 126" data_line_start="126" data_line_end="126" data_line="126,127" count_line="1">Since <span class="math-inline ">$\int_0^1nx^n\,dx=\frac n{n+1}$</span>,</div>
+<div class="preview-paragraph-128 preview-line 128" data_line_start="128" data_line_end="128" data_line="128,129" count_line="1"><span class="math-block ">$$n\int_0^1x^nf(x)\,dx=f(1)\frac n{n+1}+R_n,\qquad R_n:=n\int_0^1x^n\big(f(x)-f(1)\big)dx.$$</span></div>
+<div class="preview-paragraph-130 preview-line 130" data_line_start="130" data_line_end="130" data_line="130,131" count_line="1">The first term tends to <span class="math-inline ">$f(1)$</span>; it remains to show <span class="math-inline ">$R_n\to0$</span>.</div>
+<div class="preview-paragraph-132 preview-line 132" data_line_start="132" data_line_end="132" data_line="132,133" count_line="1">Let <span class="math-inline ">$M=\sup_{[0,1]}|f|$</span> and <span class="math-inline ">$\varepsilon\gt0$</span>. By continuity at <span class="math-inline ">$1$</span> choose <span class="math-inline ">$\delta\in(0,1)$</span> with <span class="math-inline ">$|f(x)-f(1)|\lt\varepsilon$</span> on <span class="math-inline ">$[1-\delta,1]$</span>. Then</div>
+<div class="preview-paragraph-134 preview-line 134" data_line_start="134" data_line_end="134" data_line="134,135" count_line="1"><span class="math-block ">$$|R_n|\le 2M\,n\int_0^{1-\delta}x^n\,dx+\varepsilon\,n\int_{1-\delta}^1x^n\,dx\le 2M(1-\delta)^{n+1}+\varepsilon.$$</span></div>
+<div class="preview-paragraph-136 preview-line 136" data_line_start="136" data_line_end="136" data_line="136,137" count_line="1">Since <span class="math-inline ">$(1-\delta)^{n+1}\to0$</span>, <span class="math-inline ">$\limsup|R_n|\le\varepsilon$</span> for every <span class="math-inline ">$\varepsilon\gt0$</span>, so <span class="math-inline ">$R_n\to0$</span> and the limit is <span class="math-inline ">$f(1)$</span>. <span class="math-inline ">$\blacksquare$</span></div>
+<h3 id="(c)-3" class="preview-paragraph-138 preview-line 138" data_line_start="138" data_line_end="138" data_line="138,139" count_line="1">(c)</h3>
+<div class="preview-paragraph-140 preview-line 140" data_line_start="140" data_line_end="140" data_line="140,141" count_line="1">For <span class="math-inline ">$0\lt a\lt b$</span>, the partial derivative <span class="math-inline ">$\dfrac{2x}{x^2+\sin^2\theta}$</span> is continuous on <span class="math-inline ">$[a,b]\times[0,\frac\pi2]$</span>, so we may differentiate under the integral sign:</div>
+<div class="preview-paragraph-142 preview-line 142" data_line_start="142" data_line_end="142" data_line="142,143" count_line="1"><span class="math-block ">$$f'(x)=\int_0^{\pi/2}\frac{2x}{x^2+\sin^2\theta}\,d\theta.$$</span></div>
+<div class="preview-paragraph-144 preview-line 144" data_line_start="144" data_line_end="144" data_line="144,145" count_line="1">Substitute <span class="math-inline ">$t=\tan\theta$</span>, so <span class="math-inline ">$\sin^2\theta=\frac{t^2}{1+t^2}$</span> and <span class="math-inline ">$d\theta=\frac{dt}{1+t^2}$</span>:</div>
+<div class="preview-paragraph-146 preview-line 146" data_line_start="146" data_line_end="146" data_line="146,147" count_line="1"><span class="math-block ">$$\int_0^{\pi/2}\frac{d\theta}{x^2+\sin^2\theta}=\int_0^\infty\frac{dt}{x^2+(1+x^2)t^2}=\frac1{x\sqrt{1+x^2}}\arctan\!\Big(\frac{\sqrt{1+x^2}\,t}{x}\Big)\Big|_0^\infty=\frac{\pi}{2x\sqrt{1+x^2}}.$$</span></div>
+<div class="preview-paragraph-148 preview-line 148" data_line_start="148" data_line_end="148" data_line="148,149" count_line="1">Hence</div>
+<div class="preview-paragraph-150 preview-line 150" data_line_start="150" data_line_end="150" data_line="150,151" count_line="1"><span class="math-block ">$$f'(x)=\frac{\pi}{\sqrt{1+x^2}}\quad\Longrightarrow\quad f(x)=\pi\ln\!\big(x+\sqrt{1+x^2}\big)+C.$$</span></div>
+<div class="preview-paragraph-152 preview-line 152" data_line_start="152" data_line_end="152" data_line="152,153" count_line="1"><strong>Finding <span class="math-inline ">$C$</span> with the given integral.</strong> For <span class="math-inline ">$0\lt x\le1$</span> we have <span class="math-inline ">$\ln\sin^2\theta\le\ln(x^2+\sin^2\theta)\le\ln2$</span>, and <span class="math-inline ">$\ln\sin\theta$</span> is integrable on <span class="math-inline ">$(0,\frac\pi2]$</span>, so the limit <span class="math-inline ">$x\to0^+$</span> passes under the integral:</div>
+<div class="preview-paragraph-154 preview-line 154" data_line_start="154" data_line_end="154" data_line="154,155" count_line="1"><span class="math-block ">$$\lim_{x\to0^+}f(x)=2\int_0^{\pi/2}\ln\sin\theta\,d\theta=-\pi\ln2.$$</span></div>
+<div class="preview-paragraph-156 preview-line 156" data_line_start="156" data_line_end="156" data_line="156,157" count_line="1">The formula gives <span class="math-inline ">$\lim_{x\to0^+}f(x)=\pi\ln1+C=C$</span>, so <span class="math-inline ">$C=-\pi\ln2$</span>.</div>
+<div class="preview-paragraph-158 preview-line 158" data_line_start="158" data_line_end="158" data_line="158,159" count_line="1"><strong>Cross-check as <span class="math-inline ">$x\to\infty$</span>.</strong> Write <span class="math-inline ">$\ln(x^2+\sin^2\theta)=2\ln x+\ln(1+\sin^2\theta/x^2)$</span> with <span class="math-inline ">$0\le\ln(1+\sin^2\theta/x^2)\le1/x^2$</span>. Then <span class="math-inline ">$f(x)-\pi\ln x\to0$</span>, while <span class="math-inline ">$\pi\ln(x+\sqrt{1+x^2})-\pi\ln x\to\pi\ln2$</span>. This again gives <span class="math-inline ">$C=-\pi\ln 2$</span>.</div>
+<div class="preview-paragraph-160 preview-line 160" data_line_start="160" data_line_end="160" data_line="160,161" count_line="1"><strong>Answer:</strong></div>
+<div class="preview-paragraph-162 preview-line 162" data_line_start="162" data_line_end="162" data_line="162,163" count_line="1"><span class="math-block ">$$f(x)=\pi\ln\!\Big(\frac{x+\sqrt{1+x^2}}{2}\Big)=\pi\big(\operatorname{arsinh}x-\ln2\big),\qquad x\gt0.$$</span></div>
+<div class="preview-paragraph-164 preview-line 164" data_line_start="164" data_line_end="164" data_line="164,165" count_line="1"><em>Numerically checked, e.g. <span class="math-inline ">$f(1)\approx0.5913$</span>.</em></div>
+
+    </div>
+  </div>
+  <script>
+(() => {
+  window.MathpixRenderConfig = {"width":1200,"mathDelimiterMode":"legacy","outMath":{"output_format":"svg","include_svg":true,"include_asciimath":true,"include_latex":true,"include_mathml":true,"include_mathml_word":true,"include_tsv":true,"include_table_markdown":true,"include_smiles":true},"accessibility":{"assistive_mml":true,"include_speech":false}};
+  const autoScript = document.createElement('script');
+  autoScript.src = "https://cdn.jsdelivr.net/npm/mathpix-markdown-it@3.0.1/es5/browser/auto-render.js";
+  autoScript.onload = () => {
+    console.log("[Mathpix] auto-render loaded");
+  };
+  autoScript.onerror = () => {
+    console.error("[Mathpix] Failed to load auto-render script:", autoScript.src);
+  };
+  document.head.append(autoScript);
+})();
+</script>
+    <script>
+(() => {
+  const ctxScript = document.createElement('script');
+  ctxScript.src = "https://cdn.jsdelivr.net/npm/mathpix-markdown-it@3.0.1/es5/context-menu.js";
+  ctxScript.onload = () => {
+    const init = () => {
+      window.addListenerContextMenuEvents?.();
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", init, { once: true });
+    } else {
+      init();
+    }
+    if (!window.__mathpixContextMenuKeyHandlerInstalled) {
+      window.__mathpixContextMenuKeyHandlerInstalled = true;
+      document.addEventListener("keydown", (e) => {
+        if (e.key !== "ArrowUp" && e.key !== "ArrowDown") return;
+        const el = document.querySelector(".mmd-menu");
+        if (el) e.preventDefault();
+      });
+    }
+  };
+  ctxScript.onerror = () => {
+    console.error("[Mathpix] Failed to load context-menu script:", ctxScript.src);
+  };
+  document.head.appendChild(ctxScript);
+})();
+</script>
+</body>
+</html>
